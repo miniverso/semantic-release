@@ -10,6 +10,10 @@
             "release": "patch"
           },
           {
+            "type": "patch",
+            "release": "patch"
+          },
+          {
             "type": "refactor",
             "release": "patch"
           },
@@ -64,6 +68,11 @@
             {
               "type": "fix",
               "section": ":bug: Correção",
+              "hidden": false
+            },
+            {
+              "type": "patch",
+              "section": ":truck: Patch",
               "hidden": false
             },
             {

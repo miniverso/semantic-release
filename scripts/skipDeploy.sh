@@ -19,6 +19,7 @@ fi
 
 check "### 🚀  CI-CD"
 check "### 🏗️  Build"
+check "### 🚚  Patch"
 check "### 🐛  Correção"
 check "### 💡  Novidade"
 check "### ⚡  Desempenho"
