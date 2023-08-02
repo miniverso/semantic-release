@@ -1,0 +1,23 @@
+{
+  "name": "semantic-release",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miniverso/semantic-release.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miniverso/semantic-release/issues"
+  },
+  "homepage": "https://github.com/miniverso/semantic-release#readme",
+  "dependencies": {
+    "conventional-changelog-conventionalcommits": "6.1.0",
+    "semantic-release": "21.0.7"
+  }
+}
