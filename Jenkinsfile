@@ -84,7 +84,7 @@ pipeline {
 
               sh "docker pull ${imageName}:${TAG}"
               sh "docker tag ${imageName}:${TAG} ${imageName}:prd"
-              sh "docker push ${imageName}:${prd}"
+              sh "docker push ${imageName}:prd"
             }
           }
         }
