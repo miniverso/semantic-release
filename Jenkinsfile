@@ -19,6 +19,11 @@ pipeline {
       }
     }
     stage('Build Docker Image') {
+      when{
+        not{
+          branch 'main'
+        }
+      }
       steps {
         script {
           
@@ -79,6 +84,7 @@ pipeline {
 
               sh "docker pull ${imageName}:${TAG}"
               sh "docker tag ${imageName}:${TAG} ${imageName}:prd"
+              sh "docker push ${imageName}:${prd}"
             }
           }
         }
