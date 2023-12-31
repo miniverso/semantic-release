@@ -1,4 +1,4 @@
-def imageName = "registry.gitlab.com/miniverso/semantic-release"
+def imageName = "registry.gitlab.com/grupo-loja/semantic-release"
 def CURRENT = "current"
 
 pipeline {
@@ -10,7 +10,7 @@ pipeline {
   stages {
     stage('Docker Login') {
       environment {
-        REGISTRY = credentials('gitlab')
+        REGISTRY = credentials('gl-gitlab')
       }      
       steps {
         script {
