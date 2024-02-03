@@ -1,9 +1,15 @@
 #!/bin/bash
 
-if [ ! -f .releaserc ]
+if [ ! -f .releaserc.json ]
 then
-  cp -f /opt/semantic/.releaserc .
+  echo "#### Copping default .releaserc.json"
+  cp -f /opt/semantic/.releaserc.json .
+else
+  echo "#### Merging .releaserc.json"
+  node /opt/semantic/merge.js
 fi
+
+git rev-parse --git-dir
 
 case $1 in
 run)
