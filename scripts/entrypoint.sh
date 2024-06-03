@@ -15,5 +15,5 @@ deploy)
 build)
   /opt/semantic/scripts/skipBuild.sh ;;
 *)
-  node /opt/semantic/node_modules/semantic-release/bin/semantic-release.js -d --no-ci ;;
+  node /opt/semantic/node_modules/semantic-release/bin/semantic-release.js -d --no-ci --branches $BRANCH_NAME ;;
 esac

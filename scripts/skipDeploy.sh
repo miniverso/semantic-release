@@ -1,7 +1,7 @@
 #!/bin/bash
 SR_LOGFILE=sr-logs.txt
 SR_ERROR_LOGFILE=sr-error-logs.txt
-node /opt/semantic/node_modules/semantic-release/bin/semantic-release.js -d --no-ci > $SR_LOGFILE 2> $SR_ERROR_LOGFILE
+node /opt/semantic/node_modules/semantic-release/bin/semantic-release.js -d --no-ci --branches $BRANCH_NAME > $SR_LOGFILE 2> $SR_ERROR_LOGFILE
 
 check(){
    BUILD=`grep "$1" $SR_LOGFILE | wc -l | xargs`
